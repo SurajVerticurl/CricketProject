@@ -1,19 +1,19 @@
 {
   "version": "1.0.0",
-  "title": "Employee when database is down",
+  "title": "Cricket when database is down",
   "description": "N/A",
   "tags": [],
   "steady-state-hypothesis": {
-    "title": "Employee data is available",
+    "title": "Player data is available",
     "probes": [
       {
         "type": "probe",
-        "name": "we-can-retrieve-employee-data",
+        "name": "we-can-retrieve-player-data",
         "tolerance": 200,
         "provider": {
           "type": "http",
           "timeout": 5,
-          "url": "http://localhost:8080/employee/all"
+          "url": "http://localhost:8080/cricket/all"
         }
       }
     ]
